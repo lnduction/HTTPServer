@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>&lt;/&gt;DevStudy.net - IShop layout</title>
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="static/css/font-awesome.css" rel="stylesheet">
+    <link href="static/css/app.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ishopNav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="products.html">IShop</a>
+          </div>
+          <div class="collapse navbar-collapse" id="ishopNav">
+            <a href="#" class="btn btn-primary navbar-btn navbar-right sign-in"><i class="fa fa-facebook-official" aria-hidden="true"></i> Sign in</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+          <div class="visible-xs-block xs-option-container">
+            <a class="pull-right" data-toggle="collapse" href="#productCatalog">Product catalog <span class="caret"></span></a>
+            <a data-toggle="collapse" href="#findProducts">Find products <span class="caret"></span></a>
+          </div>
+          <!-- Search form -->
+          <form action="products.html">
+            <div id="findProducts" class="panel panel-success collapse">
+              <div class="panel-heading">Find products</div>
+              <div class="panel-body">
+                <div class="input-group">
+                  <input type="text" name="query" class="form-control" placeholder="Search query">
+                  <span class="input-group-btn">
+                    <a id="goSearch" class="btn btn-default">Go!</a>
+                  </span>
+                </div>
+                <div class="more-options">
+                  <a data-toggle="collapse" href="#searchOptions">More filters <span class="caret"></span></a>
+                </div>
+              </div>
+              <div id="searchOptions" class="collapse">
+                <div class="panel-heading">Category filters</div>
+                <div class="panel-body categories">
+                  <label> <input type="checkbox" id="allCategories"> All </label>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="category" value="1" class="search-option">E-book (78)</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="category" value="2" class="search-option">Mp3-player (75)</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-heading">Producers filters</div>
+                <div class="panel-body producers">
+                  <label> <input type="checkbox" id="allProducers"> All </label>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="producer" value="1" class="search-option">Dell (56) </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="producer" value="2" class="search-option">Apple (22) </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <!-- /Search form -->
+          <!-- Categories -->
+          <div id="productCatalog" class="panel panel-success collapse">
+            <div class="panel-heading">Product catalog</div>
+            <div class="list-group">
+                <a href="#" class="list-group-item"> <span class="badge">78</span> E-book</a>
+                <a href="#" class="list-group-item"> <span class="badge">75</span> Mp3-player</a>
+                <a href="#" class="list-group-item"> <span class="badge">110</span> Notebook</a>
+                <a href="#" class="list-group-item"> <span class="badge">113</span> Phone</a>
+                <a href="#" class="list-group-item"> <span class="badge">216</span> Smartphone</a>
+                <a href="#" class="list-group-item"> <span class="badge">95</span> Smartwatch</a>
+                <a href="#" class="list-group-item"> <span class="badge">211</span> Tablet</a>
+            </div>
+          </div>
+          <!-- /Categories -->
+        </aside>
+        <main class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+          <div id="shoppingCart">
+            <div class="alert alert-warning hidden-print" role="alert">To make order, please sign in</div>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Count</th>
+                <th class="hidden-print">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="product278009" class="item">
+                  <td class="text-center"><img class="small" src="media/736d61727470686f6e65.jpg" alt="Prestigio SH398187"><br>Prestigio SH398187</td>
+                  <td class="price">$ 570.00</td>
+                  <td class="count">1</td>
+                  <td class="hidden-print">
+                    <a class="btn btn-danger remove-product" data-id-product="278009" data-count="1">Remove one</a>
+                  </td>
+                </tr>
+                <tr id="product278014" class="item">
+                  <td class="text-center"><img class="small" src="media/652d626f6f6b.jpg" alt="EvroMedia NU6353951"><br>EvroMedia NU6353951</td>
+                  <td class="price">$ 2710.00</td>
+                  <td class="count">2</td>
+                  <td class="hidden-print">
+                    <a class="btn btn-danger remove-product" data-id-product="278014" data-count="1">Remove one</a><br><br>
+                    <a class="btn btn-danger remove-product all" data-id-product="278014" data-count="2">Remove all</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="text-right"><strong>Total:</strong></td>
+                  <td colspan="2" class="total">$5990.00</td>
+                </tr>               
+              </tbody>
+            </table>
+            <div class="row hidden-print">
+              <div class="col-md-4 col-md-offset-4 col-lg-2 col-lg-offset-5">
+                <a class="btn btn-primary btn-block"><i class="fa fa-facebook-official" aria-hidden="true"></i> Sign in</a>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <footer class="footer">
+  		<div class="container">
+  			<p class="text-center">IShop demo for <a href="http://devstudy.net/course/web-ishop" target="_blank">&lt;/&gt;DevStudy.net, 2016</a></p>
+  		</div>
+  	</footer>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/app.js"></script>
+  </body>
+</html>

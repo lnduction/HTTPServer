@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Server info</title>
+<style type="text/css">
+th, td {
+	border:1px solid #1d436a;
+	padding: 5px;
+}
+table {
+	border-collapse: collapse;
+}
+td.caption {
+	font-weight: bold;
+	vertical-align: top;
+}
+</style>
+</head>
+<body>
+	<h1 style="background: #1d436a; color: white; padding: 10px 20px;">Server info</h1>
+	<table>
+		<thead>
+			<tr>
+				<th style="width:200px;">Name</th>
+				<th>Value</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="caption">Server name</td>
+				<td>${SERVER-NAME}</td>
+			</tr>
+			<tr>
+				<td class="caption">Server port</td>
+				<td>${SERVER-PORT}</td>
+			</tr>
+			<tr>
+				<td class="caption">Thread count</td>
+				<td>${THREAD-COUNT}</td>
+			</tr>
+			<tr>
+				<td class="caption">Supported request methods</td>
+				<td>${SUPPORTED-REQUEST-METHODS}</td>
+			</tr>
+			<tr>
+				<td class="caption">Supported response statuses</td>
+				<td>${SUPPORTED-RESPONSE-STATUSES}</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

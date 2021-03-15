@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>&lt;/&gt;DevStudy.net - IShop layout</title>
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="static/css/font-awesome.css" rel="stylesheet">
+    <link href="static/css/app.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ishopNav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="products.html">IShop</a>
+          </div>
+          <div class="collapse navbar-collapse" id="ishopNav">
+            <ul id="currentShoppingCart" class="nav navbar-nav navbar-right hidden">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping cart (<span class="total-count">0</span>)<span class="caret"></span>
+                </a>
+                <div class="dropdown-menu shopping-cart-desc">
+                  Total count: <span class="total-count">0</span><br>
+                  Total cost: <span class="total-cost">0</span><br>
+                  <a href="shopping-cart.html" class="btn btn-primary btn-block">View cart</a>
+                </div>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary navbar-btn navbar-right sign-in"><i class="fa fa-facebook-official" aria-hidden="true"></i> Sign in</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+          <div class="visible-xs-block xs-option-container">
+            <a class="pull-right" data-toggle="collapse" href="#productCatalog">Product catalog <span class="caret"></span></a>
+            <a data-toggle="collapse" href="#findProducts">Find products <span class="caret"></span></a>
+          </div>
+          <!-- Search form -->
+          <form class="search" action="products.html">
+            <div id="findProducts" class="panel panel-success collapse">
+              <div class="panel-heading">Find products</div>
+              <div class="panel-body">
+                <div class="input-group">
+                  <input type="text" name="query" class="form-control" placeholder="Search query">
+                  <span class="input-group-btn">
+                    <a id="goSearch" class="btn btn-default">Go!</a>
+                  </span>
+                </div>
+                <div class="more-options">
+                  <a data-toggle="collapse" href="#searchOptions">More filters <span class="caret"></span></a>
+                </div>
+              </div>
+              <div id="searchOptions" class="collapse">
+                <div class="panel-heading">Category filters</div>
+                <div class="panel-body categories">
+                  <label> <input type="checkbox" id="allCategories"> All </label>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="category" value="1" class="search-option">E-book (78)</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="category" value="2" class="search-option">Mp3-player (75)</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-heading">Producers filters</div>
+                <div class="panel-body producers">
+                  <label> <input type="checkbox" id="allProducers"> All </label>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="producer" value="1" class="search-option">Dell (56) </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="producer" value="2" class="search-option">Apple (22) </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <!-- /Search form -->
+          <!-- Categories -->
+          <div id="productCatalog" class="panel panel-success collapse">
+            <div class="panel-heading">Product catalog</div>
+              <div class="list-group">
+                <a href="#" class="list-group-item"> <span class="badge">78</span> E-book</a>
+                <a href="#" class="list-group-item"> <span class="badge">75</span> Mp3-player</a>
+                <a href="#" class="list-group-item"> <span class="badge">110</span> Notebook</a>
+                <a href="#" class="list-group-item"> <span class="badge">113</span> Phone</a>
+                <a href="#" class="list-group-item"> <span class="badge">216</span> Smartphone</a>
+                <a href="#" class="list-group-item"> <span class="badge">95</span> Smartwatch</a>
+                <a href="#" class="list-group-item"> <span class="badge">211</span> Tablet</a>
+              </div>
+          </div>
+          <!-- /Categories -->
+        </aside>
+        <main class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+          <div id="productList">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                <!-- PRODUCT DATA -->
+                <div id="product278009" class="panel panel-default product">
+                  <div class="panel-body">
+                    <div class="thumbnail"> 
+                      <img src="media/736d61727470686f6e65.jpg" alt="Prestigio SH398187">
+                      <div class="desc">
+                        <div class="cell">
+                          <p><span class="title">Details</span>Monitor diagonal 6.0" / Camera: 3.2Mp / RAM: 4 Gb / Orange / 1100 mA/h / Weight 720 g / WiFi / Bluetooth / Dictophone / USB</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="name">Prestigio SH398187</h4>
+                    <div class="code">Code: 278009</div>
+                    <div class="price">$ 570.00</div>
+                    <a class="btn btn-primary pull-right buy-btn" data-id-product="278009">Buy</a>
+                    <div class="list-group">
+                      <span class="list-group-item"> <small>Category:</small> <span class="category">Smartphone</span></span> 
+                      <span class="list-group-item"> <small>Producer:</small> <span class="producer">Prestigio</span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- /PRODUCT DATA -->
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                <!-- PRODUCT DATA -->
+                <div id="product278014" class="panel panel-default product">
+                  <div class="panel-body">
+                    <div class="thumbnail"> 
+                      <img src="media/652d626f6f6b.jpg" alt="EvroMedia NU6353951">
+                      <div class="desc">
+                        <div class="cell">
+                          <p><span class="title">Details</span>Monitor diagonal 9" / Matrix type: E lnk Pearl / Resolution: 1600x1200 / Memory 6 GB / Weight 190 g</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="name">EvroMedia NU6353951</h4>
+                    <div class="code">Code: 278014</div>
+                    <div class="price">$ 2710.00</div>
+                    <a class="btn btn-primary pull-right buy-btn" data-id-product="278014">Buy</a>
+                    <div class="list-group">
+                      <span class="list-group-item"> <small>Category:</small> <span class="category">E-book</span></span> 
+                      <span class="list-group-item"> <small>Producer:</small> <span class="producer">EvroMedia</span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- /PRODUCT DATA -->
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                <!-- PRODUCT DATA -->
+                <div id="product278018" class="panel panel-default product">
+                  <div class="panel-body">
+                    <div class="thumbnail"> 
+                      <img src="media/736d61727470686f6e65.jpg" alt="Huawei BIC2404">
+                      <div class="desc">
+                        <div class="cell">
+                          <p><span class="title">Details</span>Monitor diagonal 4.4" / Camera: 3.2Mp / RAM: 1 Gb / Blue / 1000 mA/h / Weight 320 g / 2 Sim cards / WiFi / USB / FM receiver / Dictophone / 3G</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="name">Huawei BIC2404</h4>
+                    <div class="code">Code: 278018</div>
+                    <div class="price">$ 370.00</div>
+                    <a class="btn btn-primary pull-right buy-btn" data-id-product="278018">Buy</a>
+                    <div class="list-group">
+                      <span class="list-group-item"> <small>Category:</small> <span class="category">Smartphone</span></span> 
+                      <span class="list-group-item"> <small>Producer:</small> <span class="producer">Huawei</span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- /PRODUCT DATA -->
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                <!-- PRODUCT DATA -->
+                <div id="product278026" class="panel panel-default product">
+                  <div class="panel-body">
+                    <div class="thumbnail"> 
+                      <img src="media/7461626c6574.jpg" alt="Apple QR35378150">
+                      <div class="desc">
+                        <div class="cell">
+                          <p><span class="title">Details</span>Monitor 9" / RAM 3 GB / HDD 370 GB / Black / Weight 60 g / Bluetooth / 3G / USB / GPS</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="name">Apple QR35378150</h4>
+                    <div class="code">Code: 278026</div>
+                    <div class="price">$ 2630.00</div>
+                    <a class="btn btn-primary pull-right buy-btn" data-id-product="278026">Buy</a>
+                    <div class="list-group">
+                      <span class="list-group-item"> <small>Category:</small> <span class="category">Tablet</span></span> 
+                      <span class="list-group-item"> <small>Producer:</small> <span class="producer">Apple</span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- /PRODUCT DATA -->
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                <!-- PRODUCT DATA -->
+                <div id="product278031" class="panel panel-default product">
+                  <div class="panel-body">
+                    <div class="thumbnail"> 
+                      <img src="media/7461626c6574.jpg" alt="Acer JEQ0979832">
+                      <div class="desc">
+                        <div class="cell">
+                          <p><span class="title">Details</span>Monitor 7" / RAM 4 GB / HDD 320 GB / Silver / Weight 260 g / HDMI / GPS / Bluetooth</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="name">Acer JEQ0979832</h4>
+                    <div class="code">Code: 278031</div>
+                    <div class="price">$ 1670.00</div>
+                    <a class="btn btn-primary pull-right buy-btn" data-id-product="278031">Buy</a>
+                    <div class="list-group">
+                      <span class="list-group-item"> <small>Category:</small> <span class="category">Tablet</span></span> 
+                      <span class="list-group-item"> <small>Producer:</small> <span class="producer">Acer</span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- /PRODUCT DATA -->
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                <!-- PRODUCT DATA -->
+                <div id="product278039" class="panel panel-default product">
+                  <div class="panel-body">
+                    <div class="thumbnail"> 
+                      <img src="media/736d61727470686f6e65.jpg" alt="Samsung JL9994">
+                      <div class="desc">
+                        <div class="cell">
+                          <p><span class="title">Details</span>Monitor diagonal 4.4" / Camera: 3.2Mp / RAM: 1 Gb / Black / 1700 mA/h / Weight 800 g / Bluetooth / 3G / FM receiver</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="name">Samsung JL9994</h4>
+                    <div class="code">Code: 278039</div>
+                    <div class="price">$ 1130.00</div>
+                    <a class="btn btn-primary pull-right buy-btn" data-id-product="278039">Buy</a>
+                    <div class="list-group">
+                      <span class="list-group-item"> <small>Category:</small> <span class="category">Smartphone</span></span> 
+                      <span class="list-group-item"> <small>Producer:</small> <span class="producer">Samsung</span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- /PRODUCT DATA -->
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                <!-- PRODUCT DATA -->
+                <div id="product378009" class="panel panel-default product">
+                  <div class="panel-body">
+                    <div class="thumbnail"> 
+                      <img src="media/736d61727470686f6e65.jpg" alt="Prestigio SH398187">
+                      <div class="desc">
+                        <div class="cell">
+                          <p><span class="title">Details</span>Monitor diagonal 6.0" / Camera: 3.2Mp / RAM: 4 Gb / Orange / 1100 mA/h / Weight 720 g / WiFi / Bluetooth / Dictophone / USB</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="name">Prestigio SH398187</h4>
+                    <div class="code">Code: 278009</div>
+                    <div class="price">$ 570.00</div>
+                    <a class="btn btn-primary pull-right buy-btn" data-id-product="378009">Buy</a>
+                    <div class="list-group">
+                      <span class="list-group-item"> <small>Category:</small> <span class="category">Smartphone</span></span> 
+                      <span class="list-group-item"> <small>Producer:</small> <span class="producer">Prestigio</span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- /PRODUCT DATA -->
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                <!-- PRODUCT DATA -->
+                <div id="product378014" class="panel panel-default product">
+                  <div class="panel-body">
+                    <div class="thumbnail"> 
+                      <img src="media/652d626f6f6b.jpg" alt="EvroMedia NU6353951">
+                      <div class="desc">
+                        <div class="cell">
+                          <p><span class="title">Details</span>Monitor diagonal 9" / Matrix type: E lnk Pearl / Resolution: 1600x1200 / Memory 6 GB / Weight 190 g</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="name">EvroMedia NU6353951</h4>
+                    <div class="code">Code: 278014</div>
+                    <div class="price">$ 2710.00</div>
+                    <a class="btn btn-primary pull-right buy-btn" data-id-product="378014">Buy</a>
+                    <div class="list-group">
+                      <span class="list-group-item"> <small>Category:</small> <span class="category">E-book</span></span> 
+                      <span class="list-group-item"> <small>Producer:</small> <span class="producer">EvroMedia</span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- /PRODUCT DATA -->
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                <!-- PRODUCT DATA -->
+                <div id="product378018" class="panel panel-default product">
+                  <div class="panel-body">
+                    <div class="thumbnail"> 
+                      <img src="media/736d61727470686f6e65.jpg" alt="Huawei BIC2404">
+                      <div class="desc">
+                        <div class="cell">
+                          <p><span class="title">Details</span>Monitor diagonal 4.4" / Camera: 3.2Mp / RAM: 1 Gb / Blue / 1000 mA/h / Weight 320 g / 2 Sim cards / WiFi / USB / FM receiver / Dictophone / 3G</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="name">Huawei BIC2404</h4>
+                    <div class="code">Code: 278018</div>
+                    <div class="price">$ 370.00</div>
+                    <a class="btn btn-primary pull-right buy-btn" data-id-product="378018">Buy</a>
+                    <div class="list-group">
+                      <span class="list-group-item"> <small>Category:</small> <span class="category">Smartphone</span></span> 
+                      <span class="list-group-item"> <small>Producer:</small> <span class="producer">Huawei</span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- /PRODUCT DATA -->
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                <!-- PRODUCT DATA -->
+                <div id="product378026" class="panel panel-default product">
+                  <div class="panel-body">
+                    <div class="thumbnail"> 
+                      <img src="media/7461626c6574.jpg" alt="Apple QR35378150">
+                      <div class="desc">
+                        <div class="cell">
+                          <p><span class="title">Details</span>Monitor 9" / RAM 3 GB / HDD 370 GB / Black / Weight 60 g / Bluetooth / 3G / USB / GPS</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="name">Apple QR35378150</h4>
+                    <div class="code">Code: 278026</div>
+                    <div class="price">$ 2630.00</div>
+                    <a class="btn btn-primary pull-right buy-btn" data-id-product="378026">Buy</a>
+                    <div class="list-group">
+                      <span class="list-group-item"> <small>Category:</small> <span class="category">Tablet</span></span> 
+                      <span class="list-group-item"> <small>Producer:</small> <span class="producer">Apple</span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- /PRODUCT DATA -->
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                <!-- PRODUCT DATA -->
+                <div id="product378031" class="panel panel-default product">
+                  <div class="panel-body">
+                    <div class="thumbnail"> 
+                      <img src="media/7461626c6574.jpg" alt="Acer JEQ0979832">
+                      <div class="desc">
+                        <div class="cell">
+                          <p><span class="title">Details</span>Monitor 7" / RAM 4 GB / HDD 320 GB / Silver / Weight 260 g / HDMI / GPS / Bluetooth</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="name">Acer JEQ0979832</h4>
+                    <div class="code">Code: 278031</div>
+                    <div class="price">$ 1670.00</div>
+                    <a class="btn btn-primary pull-right buy-btn" data-id-product="378031">Buy</a>
+                    <div class="list-group">
+                      <span class="list-group-item"> <small>Category:</small> <span class="category">Tablet</span></span> 
+                      <span class="list-group-item"> <small>Producer:</small> <span class="producer">Acer</span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- /PRODUCT DATA -->
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                <!-- PRODUCT DATA -->
+                <div id="product378039" class="panel panel-default product">
+                  <div class="panel-body">
+                    <div class="thumbnail"> 
+                      <img src="media/736d61727470686f6e65.jpg" alt="Samsung JL9994">
+                      <div class="desc">
+                        <div class="cell">
+                          <p><span class="title">Details</span>Monitor diagonal 4.4" / Camera: 3.2Mp / RAM: 1 Gb / Black / 1700 mA/h / Weight 800 g / Bluetooth / 3G / FM receiver</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="name">Samsung JL9994</h4>
+                    <div class="code">Code: 278039</div>
+                    <div class="price">$ 1130.00</div>
+                    <a class="btn btn-primary pull-right buy-btn" data-id-product="378039">Buy</a>
+                    <div class="list-group">
+                      <span class="list-group-item"> <small>Category:</small> <span class="category">Smartphone</span></span> 
+                      <span class="list-group-item"> <small>Producer:</small> <span class="producer">Samsung</span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- /PRODUCT DATA -->
+              </div>
+            </div>
+            <div class="text-center hidden-print">
+              <img id="loadMoreIndicator" src="static/img/loading.gif" class="hidden" alt="Loading...">
+              <a id="loadMore" class="btn btn-success">Load more products</a>
+            </div>
+          </div>
+          <div id="addProductPopup" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">Add product to Shopping cart</h4>
+                </div>
+                <div class="modal-body row">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="thumbnail">
+                      <img class="product-image" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Product image">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <h4 class="name text-center">Name</h4>
+                    <div class="list-group hidden-xs adv-chars">
+                      <span class="list-group-item"> <small>Category:</small> <span class="category">?</span></span> 
+                      <span class="list-group-item"> <small>Producer:</small> <span class="producer">?</span></span>
+                    </div>
+                    <div class="list-group">
+                      <span class="list-group-item"> <small>Price:</small> <span class="price">0</span></span> 
+                      <span class="list-group-item"> <small>Count:</small> <input type="number" class="count" value="1" min="1" max="10"></span> 
+                      <span class="list-group-item"> <small>Cost:</small> <span class="cost">0</span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <img id="addToCartIndicator" src="static/img/loading.gif" class="hidden" alt="Loading...">
+                  <button id="addToCart" type="button" class="btn btn-primary">Add to Cart</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <footer class="footer">
+  		<div class="container">
+  			<p class="text-center">IShop demo for <a href="http://devstudy.net/course/web-ishop" target="_blank">&lt;/&gt;DevStudy.net, 2016</a></p>
+  		</div>
+  	</footer>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/app.js"></script>
+  </body>
+</html>

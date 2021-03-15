@@ -1,0 +1,342 @@
+2020-09-30 17:04:40 [CLI-main thread] DEBUG I.DefaultHttpServerConfig: Successful loaded properties from classpath resource: statuses.properties
+2020-09-30 17:04:40 [CLI-main thread] DEBUG I.DefaultHttpServerConfig: Successful loaded properties from classpath resource: mime-types.properties
+2020-09-30 17:04:40 [CLI-main thread] DEBUG I.DefaultHttpServerConfig: Successful loaded properties from classpath resource: server.properties
+2020-09-30 17:04:40 [CLI-main thread] DEBUG I.DefaultHttpServerConfig: Current server properties is:
+db.datasource.pool.maxSize=3
+db.datasource.pool.initSize=2
+db.datasource.username=tester
+db.datasource.password=12345
+db.datasource.url=jdbc:postgresql://localhost:5432/test
+server.name=my HTTP server
+db.datasource.enabled=true
+server.port=80
+webapp.static.expires.days=7
+wepapp.static.dir.root=root
+webapp.static.expires.extensions=css,js,eot,svg,ttf,woff,woff2
+server.thread.count=0
+db.datasource.driver=org.postgresql.Driver
+
+2020-09-30 17:04:40 [CLI-main thread] INFO  I.DefaultHttpServerConfig: Root path is /Users/aleksandrce/Documents/test/root
+2020-09-30 17:04:40 [CLI-main thread] INFO  I.DefaultHttpServerConfig: Datasource is enabled. JDBC url is jdbc:postgresql://localhost:5432/test
+2020-09-30 17:04:40 [CLI-main thread] INFO  Implementations.DefaultHttpServer: Server started: Server.ServerInfo{ name=' my HTTP server', port= ' 80', threadCount=' UNLIMITED' }
+2020-09-30 17:04:43 [ShutdownHook] INFO  I.DefaultHttpServerConfig: DefaultHttpServerConfig closed
+2020-09-30 17:04:43 [ShutdownHook] INFO  Implementations.DefaultHttpServer: Server stopped
+2020-09-30 17:04:50 [CLI-main thread] DEBUG I.DefaultHttpServerConfig: Successful loaded properties from classpath resource: statuses.properties
+2020-09-30 17:04:50 [CLI-main thread] DEBUG I.DefaultHttpServerConfig: Successful loaded properties from classpath resource: mime-types.properties
+2020-09-30 17:04:50 [CLI-main thread] DEBUG I.DefaultHttpServerConfig: Successful loaded properties from classpath resource: server.properties
+2020-09-30 17:04:50 [CLI-main thread] DEBUG I.DefaultHttpServerConfig: Current server properties is:
+db.datasource.pool.maxSize=3
+db.datasource.pool.initSize=2
+db.datasource.username=tester
+db.datasource.password=12345
+db.datasource.url=jdbc:postgresql://localhost:5432/test
+server.name=my HTTP server
+db.datasource.enabled=true
+server.port=80
+webapp.static.expires.days=7
+wepapp.static.dir.root=root
+webapp.static.expires.extensions=css,js,eot,svg,ttf,woff,woff2
+server.thread.count=0
+db.datasource.driver=org.postgresql.Driver
+
+2020-09-30 17:04:50 [CLI-main thread] INFO  I.DefaultHttpServerConfig: Root path is /Users/aleksandrce/Documents/test/root
+2020-09-30 17:04:51 [CLI-main thread] INFO  I.DefaultHttpServerConfig: Datasource is enabled. JDBC url is jdbc:postgresql://localhost:5432/test
+2020-09-30 17:04:51 [CLI-main thread] INFO  Implementations.DefaultHttpServer: Server started: Server.ServerInfo{ name=' my HTTP server', port= ' 80', threadCount=' UNLIMITED' }
+2020-09-30 17:04:56 [executor-thread-1] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:04:56 [executor-thread-1] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Upgrade-Insecure-Requests: 1, 
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Referer: http://localhost/, 
+Accept-Language: en-us, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:04:56 [executor-thread-1] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:04:56 [executor-thread-1] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:04:56 [executor-thread-1] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55384 - "GET /ishop-layout HTTP/1.1", Response: 200 (413 bytes)
+2020-09-30 17:04:58 [executor-thread-1] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:04:58 [executor-thread-1] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Upgrade-Insecure-Requests: 1, 
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Referer: http://localhost/ishop-layout, 
+Accept-Language: en-us, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:04:59 [executor-thread-1] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:04:59 [executor-thread-1] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:04:59 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:04:59 [executor-thread-2] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Accept: text/css,*/*;q=0.1, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Accept-Language: en-us, 
+Referer: http://localhost/ishop-layout/shopping-cart.html, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:04:59 [executor-thread-3] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:04:59 [executor-thread-3] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Accept: text/css,*/*;q=0.1, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Accept-Language: en-us, 
+Referer: http://localhost/ishop-layout/shopping-cart.html, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:04:59 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:04:59 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:04:59 [executor-thread-4] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:04:59 [executor-thread-4] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Accept: text/css,*/*;q=0.1, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Accept-Language: en-us, 
+Referer: http://localhost/ishop-layout/shopping-cart.html, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:04:59 [executor-thread-3] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:04:59 [executor-thread-5] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:04:59 [executor-thread-4] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:04:59 [executor-thread-3] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:04:59 [executor-thread-6] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:04:59 [executor-thread-5] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Accept: image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Accept-Language: en-us, 
+Referer: http://localhost/ishop-layout/shopping-cart.html, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:04:59 [executor-thread-4] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:04:59 [executor-thread-6] INFO  I.DefaultHttpRequestParser: Uri is decoded
+2020-09-30 17:04:59 [executor-thread-6] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:04:59 [executor-thread-5] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:04:59 [executor-thread-5] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:04:59 [executor-thread-1] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55385 - "GET /ishop-layout/shopping-cart.html HTTP/1.1", Response: 200 (7890 bytes)
+2020-09-30 17:04:59 [executor-thread-2] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55386 - "GET /ishop-layout/static/css/bootstrap-theme.css HTTP/1.1", Response: 200 (26670 bytes)
+2020-09-30 17:04:59 [executor-thread-3] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55387 - "GET /ishop-layout/static/css/font-awesome.css HTTP/1.1", Response: 200 (37333 bytes)
+2020-09-30 17:04:59 [executor-thread-6] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55390 - "GET /ishop-layout/static/fonts/fontawesome-webfont.woff2 HTTP/1.1", Response: 200 (71896 bytes)
+2020-09-30 17:04:59 [executor-thread-4] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55388 - "GET /ishop-layout/static/css/app.css HTTP/1.1", Response: 200 (3436 bytes)
+2020-09-30 17:04:59 [executor-thread-5] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55389 - "GET /ishop-layout/media/736d61727470686f6e65.jpg HTTP/1.1", Response: 200 (26307 bytes)
+2020-09-30 17:04:59 [executor-thread-4] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:04:59 [executor-thread-6] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:04:59 [executor-thread-6] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Accept: image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Accept-Language: en-us, 
+Referer: http://localhost/ishop-layout/shopping-cart.html, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:04:59 [executor-thread-4] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Accept: text/css,*/*;q=0.1, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Accept-Language: en-us, 
+Referer: http://localhost/ishop-layout/shopping-cart.html, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:04:59 [executor-thread-6] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:04:59 [executor-thread-6] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:04:59 [executor-thread-4] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:04:59 [executor-thread-4] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:04:59 [executor-thread-6] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55392 - "GET /ishop-layout/media/652d626f6f6b.jpg HTTP/1.1", Response: 200 (31261 bytes)
+2020-09-30 17:04:59 [executor-thread-4] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55391 - "GET /ishop-layout/static/css/bootstrap.css HTTP/1.1", Response: 200 (152799 bytes)
+2020-09-30 17:04:59 [executor-thread-4] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:04:59 [executor-thread-4] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Accept: text/css,*/*;q=0.1, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Accept-Language: en-us, 
+Referer: http://localhost/ishop-layout/shopping-cart.html, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:04:59 [executor-thread-4] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:04:59 [executor-thread-4] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:04:59 [executor-thread-4] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55393 - "GET /ishop-layout/static/css/bootstrap.css HTTP/1.1", Response: 200 (152799 bytes)
+2020-09-30 17:04:59 [executor-thread-6] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:04:59 [executor-thread-5] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:04:59 [executor-thread-6] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Accept: text/css,*/*;q=0.1, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Accept-Language: en-us, 
+Referer: http://localhost/ishop-layout/shopping-cart.html, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:04:59 [executor-thread-5] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Accept: text/css,*/*;q=0.1, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Accept-Language: en-us, 
+Referer: http://localhost/ishop-layout/shopping-cart.html, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:04:59 [executor-thread-6] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:04:59 [executor-thread-6] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:04:59 [executor-thread-3] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:04:59 [executor-thread-3] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Accept: text/css,*/*;q=0.1, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Accept-Language: en-us, 
+Referer: http://localhost/ishop-layout/shopping-cart.html, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:04:59 [executor-thread-3] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:04:59 [executor-thread-3] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:04:59 [executor-thread-6] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55394 - "GET /ishop-layout/static/css/bootstrap-theme.css HTTP/1.1", Response: 200 (26670 bytes)
+2020-09-30 17:04:59 [executor-thread-3] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55396 - "GET /ishop-layout/static/css/app.css HTTP/1.1", Response: 200 (3436 bytes)
+2020-09-30 17:04:59 [executor-thread-5] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:04:59 [executor-thread-5] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:04:59 [executor-thread-5] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55395 - "GET /ishop-layout/static/css/font-awesome.css HTTP/1.1", Response: 200 (37333 bytes)
+2020-09-30 17:04:59 [executor-thread-1] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:04:59 [executor-thread-1] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Accept: image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Accept-Language: en-us, 
+Referer: http://localhost/ishop-layout/shopping-cart.html, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:04:59 [executor-thread-1] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:04:59 [executor-thread-1] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:04:59 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:04:59 [executor-thread-2] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Accept: image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Accept-Language: en-us, 
+Referer: http://localhost/ishop-layout/shopping-cart.html, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:04:59 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:04:59 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:04:59 [executor-thread-1] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55397 - "GET /ishop-layout/media/736d61727470686f6e65.jpg HTTP/1.1", Response: 200 (26307 bytes)
+2020-09-30 17:04:59 [executor-thread-2] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55398 - "GET /ishop-layout/media/652d626f6f6b.jpg HTTP/1.1", Response: 200 (31261 bytes)
+2020-09-30 17:04:59 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:04:59 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Uri is decoded
+2020-09-30 17:04:59 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:04:59 [executor-thread-2] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55399 - "GET /ishop-layout/static/fonts/fontawesome-webfont.woff2 HTTP/1.1", Response: 200 (71896 bytes)
+2020-09-30 17:05:01 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:05:01 [executor-thread-2] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Upgrade-Insecure-Requests: 1, 
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Referer: http://localhost/ishop-layout, 
+Accept-Language: en-us, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:05:01 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:05:01 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:05:01 [executor-thread-2] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55400 - "GET /ishop-layout/media HTTP/1.1", Response: 200 (738 bytes)
+2020-09-30 17:05:04 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:05:04 [executor-thread-2] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Upgrade-Insecure-Requests: 1, 
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Referer: http://localhost/ishop-layout/media, 
+Accept-Language: en-us, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:05:04 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:05:04 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:05:04 [executor-thread-2] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55402 - "GET /ishop-layout/media/736d61727470686f6e65.jpg HTTP/1.1", Response: 200 (26307 bytes)
+2020-09-30 17:05:06 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:05:06 [executor-thread-2] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Upgrade-Insecure-Requests: 1, 
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Referer: http://localhost/ishop-layout/media, 
+Accept-Language: en-us, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:05:06 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:05:06 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:05:06 [executor-thread-2] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55416 - "GET /ishop-layout/media/6e6f7465626f6f6b.jpg HTTP/1.1", Response: 200 (38439 bytes)
+2020-09-30 17:05:09 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:05:09 [executor-thread-2] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Upgrade-Insecure-Requests: 1, 
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Referer: http://localhost/ishop-layout/media, 
+Accept-Language: en-us, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:05:09 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:05:09 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:05:09 [executor-thread-2] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55428 - "GET /ishop-layout/media/6d70332d706c61796572.jpg HTTP/1.1", Response: 200 (19127 bytes)
+2020-09-30 17:05:13 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:05:13 [executor-thread-2] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Upgrade-Insecure-Requests: 1, 
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Referer: http://localhost/ishop-layout/media, 
+Accept-Language: en-us, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:05:13 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:05:13 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:05:13 [executor-thread-2] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55442 - "GET /ishop-layout/media/736d6172747761746368.jpg HTTP/1.1", Response: 200 (35292 bytes)
+2020-09-30 17:05:16 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Read input stream
+2020-09-30 17:05:16 [executor-thread-2] INFO  I.DefaultHttpRequestParser: input data is: [
+Host: localhost, 
+Connection: keep-alive, 
+Upgrade-Insecure-Requests: 1, 
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Safari/605.1.15, 
+Referer: http://localhost/ishop-layout/media, 
+Accept-Language: en-us, 
+Accept-Encoding: gzip, deflate, 
+, 
+]
+2020-09-30 17:05:16 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Headers is parsed
+2020-09-30 17:05:16 [executor-thread-2] INFO  I.DefaultHttpRequestParser: Request is parsed
+2020-09-30 17:05:16 [executor-thread-2] INFO  ACCESS_LOG: Request: /0:0:0:0:0:0:0:1:55454 - "GET /ishop-layout/media/7461626c6574.jpg HTTP/1.1", Response: 200 (42208 bytes)
+2020-09-30 17:05:54 [ShutdownHook] INFO  I.DefaultHttpServerConfig: DefaultHttpServerConfig closed
+2020-09-30 17:05:54 [ShutdownHook] INFO  Implementations.DefaultHttpServer: Server stopped

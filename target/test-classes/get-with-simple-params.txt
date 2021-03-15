@@ -1,0 +1,2 @@
+GET /index.html?param1=value1&param2=true HTTP/1.1
+

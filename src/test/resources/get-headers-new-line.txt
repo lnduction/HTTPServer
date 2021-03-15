@@ -1,0 +1,6 @@
+GET /index.html HTTP/1.1
+accept: text/html
+content-type: text/html;
+              charset=windows-1251
+Host: localhost
+

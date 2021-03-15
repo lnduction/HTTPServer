@@ -1,0 +1,6 @@
+GET /index.html HTTP/1.1
+HOST: localhost
+USER-Agent: Mozilla/5.0 (X11; U; Linux i686; ru; rv:1.9b5) Gecko/2008050509 Firefox/3.0b5
+accept: text/html
+CoNNeCtion: close
+

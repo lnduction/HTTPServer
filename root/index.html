@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>&lt;/&gt;DevStudy.net - HTTP</title>
+<link rel="stylesheet" href="/static/css/bootstrap.css" />
+<link rel="stylesheet" href="/static/css/bootstrap-theme.css" />
+</head>
+<body>
+	<h1 class="text-center">HTTP Study page</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Input types (200 + GET)</div>
+					<div class="panel-body">
+						<form action="index.html" method="get">
+							<div class="form-group">
+								<label for="idEmail">Email address</label> 
+								<input type="email" class="form-control" name="email" id="idEmail" value="welcome@devstudy.net">
+							</div>
+							<div class="form-group">
+								<label for="idPassword">Password</label> 
+								<input type="password" class="form-control" name="password" id="idPassword" placeholder="Password">
+							</div>
+							<div class="form-group">
+								<label for="idNumber">Number</label> 
+								<input type="number" class="form-control" name="number" id="idNumber" value="5" min="0" max="9" step="1">
+							</div>
+							<div class="form-group">
+								<label for="idText">Text</label> 
+								<input type="text" class="form-control" name="text" id="idText" value="Simple Text">
+							</div>
+							<div class="form-group">
+								<label for="idUrl">Url</label> 
+								<input type="url" class="form-control" name="url" id="idUrl" value="http://devstudy.net">
+							</div>
+							<a href="https://webref.ru/html/input/type" target="_blank">All input types</a><br>
+							<br>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Other input types (200 + GET)</div>
+					<div class="panel-body">
+						<form action="index.html" method="get">
+							<div class="form-group">
+								<label for="idHidden">Hidden</label> 
+								<input type="hidden" class="form-control" name="hidden" id="Hidden" value="hidden-value">
+							</div>
+							<div class="form-group">
+								<label for="idCheckbox">Check box</label> 
+								<input type="checkbox" class="form-control" name="checkbox" id="idCheckbox" value="true">
+							</div>
+							<div class="form-group">
+								<label for="idRadio1">Radio1</label> 
+								<input type="radio" class="form-control" name="radio" id="idRadio1" value="r1">
+							</div>
+							<div class="form-group">
+								<label for="idRadio2">Radio2</label> 
+								<input type="radio" class="form-control" name="radio" id="idRadio2" value="r2">
+							</div>
+							<div class="form-group">
+								<label for="idRadio3">Radio3</label> 
+								<input type="radio" class="form-control" name="radio" id="idRadio3" value="r3">
+							</div>
+							<input type="submit" name="submit" value="Submit">
+						</form>
+					</div>
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">Links</div>
+					<div class="panel-body">
+						<a href="index.html?hidden=hidden-value&checkbox=true&radio=r2&submit=Submit">GET 200</a>&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="not-found.html?param1=value1&param2=value2">GET 404</a>&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="http://google.com">GET 302</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Select (200 + GET)</div>
+					<div class="panel-body">
+						<form action="index.html" method="get">
+							<div class="form-group">
+								<label for="idSelect">Select city:</label> 
+								<select id="idSelect" name="select1">
+									<option value="1">London</option>
+									<option value="2">Moscov</option>
+									<option value="new-york">New York</option>
+									<option value="p1">Paris</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="idSelect2">Select city:</label> 
+								<select id="idSelect2" name="select2" multiple="multiple" size="3">
+									<option value="1">London</option>
+									<option value="2">Moscov</option>
+									<option value="new-york">New York</option>
+									<option value="p1">Paris</option>
+								</select>
+							</div>
+							<input type="submit" value="Submit">
+						</form>
+					</div>
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">Input (404 + GET)</div>
+					<div class="panel-body">
+						<form action="not-found.html" method="get">
+							<div class="form-group">
+								<label for="idText">Text</label> 
+								<input type="text" class="form-control" name="text" id="idText" value="Simple Text">
+							</div>
+							<input type="submit" value="Submit">
+						</form>
+					</div>
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">Input (405 + POST)</div>
+					<div class="panel-body">
+						<form action="index.html" method="post">
+							<input type="hidden" class="form-control" name="hidden1" value="hidden-value-1">
+							<input type="hidden" class="form-control" name="hidden2" value="hidden-value-2">
+							<div class="form-group">
+								<label for="idText">Text</label> 
+								<input type="text" class="form-control" name="text" id="idText" value="Simple Text">
+							</div>
+							<input type="submit" value="Submit">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Ajax requests</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-3 text-center">
+								<a id="ajax1" class="btn btn-primary">GET index.html</a>
+							</div>
+							<div class="col-xs-3 text-center">
+								<a id="ajax2" class="btn btn-primary">GET with custom header</a>
+							</div>
+							<div class="col-xs-3 text-center">
+								<a id="ajax3" class="btn btn-primary">HEAD index.html</a>
+							</div>
+							<div class="col-xs-3 text-center">
+								<a id="ajax4" class="btn btn-primary">GET not found</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<script src="/static/js/jquery.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+<script>
+$(function(){
+	$('#ajax1').click(function(){
+		$.ajax({
+			url : 'index.html',
+			data : {
+				param1 : 'value1',
+				param2 : 'value2'
+			},
+			success : function(){
+				console.log('success');
+			}
+		});
+	});
+	$('#ajax2').click(function(){
+		$.ajax({
+			url : 'index.html',
+			data : {
+				param1 : 'value1',
+				param2 : 'value2'
+			},
+			headers: {
+		        HEADER1 : "first value",
+		        HEADER2 : "second value"
+		    },
+			success : function(){
+				console.log('success');
+			}
+		});
+	});
+	$('#ajax3').click(function(){
+		$.ajax({
+			method: 'HEAD',
+			url : 'index.html?v='+Math.random(),
+			data : {
+				param1 : 'value1',
+				param2 : 'value2'
+			},
+			success : function(){
+				console.log('success');
+			}
+		});
+	});
+	$('#ajax4').click(function(){
+		$.ajax({
+			url : 'not-found.html',
+			success : function(){
+				console.log('success');
+			}
+		});
+	});
+});	
+</script>
+</body>
+</html>
